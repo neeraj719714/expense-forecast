@@ -18,6 +18,14 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "poethepoet>=0.48.0",
     "pytest>=9.1.1",
     "ruff>=0.16.8",
 ]
+
+[tool.poe.tasks]
+test = "pytest"
+lint = "ruff check ."
+format = "ruff format ."
+fix = ["format", { cmd = "ruff check --fix ." }]
+check = ["lint", "test"]
