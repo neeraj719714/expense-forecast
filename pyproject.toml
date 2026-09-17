@@ -21,11 +21,13 @@ dev = [
     "poethepoet>=0.48.0",
     "pytest>=9.1.1",
     "ruff>=0.16.8",
+    "ty>=0.0.82",
 ]
 
 [tool.poe.tasks]
 test = "pytest"
 lint = "ruff check ."
+typecheck = "ty check src"
 format = "ruff format ."
 fix = ["format", { cmd = "ruff check --fix ." }]
-check = ["lint", "test"]
+check = ["lint", "typecheck", "test"]
