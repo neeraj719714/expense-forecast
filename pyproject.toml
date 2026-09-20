@@ -3,26 +3,22 @@ name = "expense-forecast"
 version = "0.1.0"
 description = "a personal finance tracker and forecaster"
 readme = "README.md"
-authors = [
-    { name = "Neeraj", email = "neerajkumar719714@gmail.com" }
-]
+authors = [{ name = "Neeraj", email = "neerajkumar719714@gmail.com" }]
 requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
 expense-forecast = "expense_forecast:main"
 
+[tool.ruff.lint]
+ignore = ["I001"] # or ignore = ["I"]
+
 [build-system]
 requires = ["uv_build>=0.12.15,<0.13.0"]
 build-backend = "uv_build"
 
 [dependency-groups]
-dev = [
-    "poethepoet>=0.48.0",
-    "pytest>=9.1.1",
-    "ruff>=0.16.8",
-    "ty>=0.0.82",
-]
+dev = ["poethepoet>=0.48.0", "pytest>=9.1.1", "ruff>=0.16.8", "ty>=0.0.82"]
 
 [tool.poe.tasks]
 test = "pytest"
