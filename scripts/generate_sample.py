@@ -3,7 +3,16 @@ import random
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
-MERCHANTS = ["AMAZON", "STARBUCKS", "UBER", "PETROL", "SWIGGY", "BLINKIT", "ZEPTO"]
+MERCHANTS = [
+    "SALARY",
+    "AMAZON",
+    "STARBUCKS",
+    "UBER",
+    "PETROL",
+    "SWIGGY",
+    "BLINKIT",
+    "ZEPTO",
+]
 
 Row = tuple[str, str, float]
 
