@@ -41,3 +41,6 @@ mlruns/
 .vscode/
 .idea/
 .DS_Store
+
+# -- Samples generated or stored
+samples/*
