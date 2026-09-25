@@ -12,7 +12,7 @@ def test_expense_summary(tmp_path):
         "2026-08-08,SWIGGY,100\n"
     )
 
-    summarised = summary.summary(test_csv)
+    summarised = summary(test_csv)
     assert summarised.total_income == 6500
     assert summarised.total_spend == 750
     assert summarised.monthly_spent["2026-07"] == 650
