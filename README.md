@@ -116,7 +116,7 @@ deployed to a free host.
 ## Progress
 
 - [X] Phase 0 — Project setup
-- [ ] Phase 1 — CSV summary
+- [x] Phase 1 — CSV summary
 - [ ] Phase 2 — Data model and persistence
 - [ ] Phase 3 — Multi-bank import and rules
 - [ ] Phase 4 — Web API
